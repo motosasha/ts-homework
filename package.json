@@ -1,0 +1,14 @@
+{
+  "name": "type-script",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "npx tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "devdependencies": {
+    "typescript": "^5.8.3"
+  }
+}
