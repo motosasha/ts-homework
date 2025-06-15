@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile": "npx tsc"
+    "compile": "bun run tsc"
   },
   "author": "",
   "license": "ISC",
-  "devdependencies": {
+  "devdependencies": {},
+  "dependencies": {
     "typescript": "^5.8.3"
   }
 }
