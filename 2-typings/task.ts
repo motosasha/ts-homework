@@ -1,8 +1,8 @@
 "use strict";
 
-var makeOrdinal = require("./makeOrdinal");
-var isFinite = require("./isFinite");
-var isSafeNumber = require("./isSafeNumber");
+const makeOrdinal = require("./makeOrdinal");
+const isFinite = require("./isFinite");
+const isSafeNumber = require("./isSafeNumber");
 
 const enum Numbers {
   TEN = 10,
@@ -59,7 +59,7 @@ const TENTHS_LESS_THAN_HUNDRED: string[] = [
  * @param {boolean} [asOrdinal] - Deprecated, use toWordsOrdinal() instead!
  * @returns {string}
  */
-function toWords(number: number | string, asOrdinal: boolean): string {
+function toWords(number: number | string, asOrdinal?: boolean): string {
   let words: string;
   let num: number = parseInt(number, 10);
 
@@ -80,7 +80,7 @@ function toWords(number: number | string, asOrdinal: boolean): string {
 function generateWords(number: number): string {
   let remainder: number;
   let word: string;
-  let words: string[] = arguments[1];
+  let words: string[] = arguments[1] as string[];
 
   // We’re done
   if (number === 0) {
